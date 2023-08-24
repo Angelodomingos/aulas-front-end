@@ -11,6 +11,9 @@
 h1{
  color: blue;
  border-left: 10px solid #22b46b;
+ text-shadow: #22b46b 2px 2px 20px;
+ padding: 15px;
+
 }
 
 h2{
@@ -26,40 +29,66 @@ p{
 }
  /* Regras */
 
-.centraliza{ text-align: center;}
+.centraliza{ 
+    text-align: center;
+}
 
+.destaque{
+    background-color: hsl(51, 98%, 53%);
+    border: solid 2px blue;
+}
 
+/* Regra CSS 
+usando seletor ID (Identificador)*/
+
+#listas {
+    background-color: blanchedalmond;
+    box-shadow: black 1px 1px 2px;
+    padding: 8px;
+}
+
+a {
+    background-color: rgb(52, 123, 182);
+    text-shadow: #22b46b;
+    box-shadow: #7e8d85;
+
+}
 </style>
 </head>
 <body>
     
     
-<p><a href="links.html"  >voltar </a></p>
-<h1> Trabalhando com lista </h1>
+<p ><a href="links.html"  >voltar </a></p>
+
+<h1 class="centraliza destaque"> Trabalhando com lista </h1>
 <p> Conteudo representado na forma de uma relacao de intes</p>
 
 <p class="centraliza">Viva bém sempre</p>
 
 <p>Como está a tua saúde?</p>
 
-
+<div id="listas">
 <h2>Não-ordenada</h2>
-<ul>
+<ol>
     <li> Limão</li>
     <li>Açúcar</li>
     <li>Feijão</li>
-</ul>
-
+</ol>
+</div>
 
 
 <h2>Ordenadas</h2>
-<ul>
-    1 Viva
-</ul>
+<ul>1 Viva</ul>
 <ul> 2 Vivos</ul>
 
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est vel cupiditate deserunt tempore dolorum hic magnam neque facilis mollitia cumque recusandae alias itaque voluptatibus enim quod,  <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium sapiente quibusdam vero perferendis quis ab harum neque, ut dignissimos autem, cumque quasi! Corrupti beatae maiores repellendus perspiciatis alias, dignissimos est.</i> quis sint expedita.
+
+
+
+
+<h3>Sobre nós</h3>
+<p>Contatos</p>
 
 
 </body>
