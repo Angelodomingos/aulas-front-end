@@ -19,7 +19,7 @@ O CSS é aplicado diretamente em cada tag HTML.
 ### interna ou onPage(na páginas)
 
 
-O CSS é criado usando regras 9com seletetores, propriedades e valor. dentro da propria pág que queremos formatar.
+O CSS é criado usando regras com seletetores, propriedades e valor. dentro da propria pág que queremos formatar.
 
 
 As regras vão valer para todas as tags/elementos desta pág
