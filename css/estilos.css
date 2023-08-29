@@ -1,0 +1,79 @@
+/* Neste arquivo, faremos TODAS as REGRAS
+CSS necessarias para a formatação do site.*/
+
+ body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(../imagens/watercolor.png);
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    border: rgb(202, 202, 196) solid 4px;
+    padding: 10px;
+    height: 50px; 
+    background-color:; 
+    box-shadow: rgb(255, 255, 255)  0 0  15px inset;
+    text-transform: uppercase;
+
+
+}
+
+#container{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgb(8, 8, 8) 0 0 5px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+h2{
+    font-size: 20px;
+    border-bottom: solid 1px;
+    border-left:  dashed 2px;
+    padding-left: 10px;
+}
+
+
+
+
+/* Grupo de seletores*/
+h3, p, figcaption{
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3{
+    background: linear-gradient(
+        to right,
+        rgb(31, 29, 31),
+        rgb(61, 58, 65),
+        rgb(126, 126, 89));
+}
+
+
+.destaque {
+    background-color: aliceblue;
+    padding: 3px;
+    color: rgb(136, 57, 57);
+    border-radius: 4px;
+}
+
+
+
+
+/* Reaset*/
+
+figure{
+    margin: 0px;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
