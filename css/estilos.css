@@ -8,6 +8,11 @@ CSS necessarias para a formatação do site.*/
 
 
 h1{
+
+    animation-name: caindo;
+    animation-duration: 5s;
+    /*animation-iteration-count: infinite;*/
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color: black;
@@ -98,4 +103,78 @@ li{
 
 li::marker{
     content: "🔥";
+    font-size: 15px;
 }
+
+/* Regras para o meu */
+
+
+nav{
+    text-align: center;
+}
+
+/* Regra para o estado inicial do Link*/
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(199, 33, 88);
+    background-color: antiquewhite;  
+    width: 50%;
+    display: inline-block;  
+    padding: 10px;
+    /* Alterando o Box Model fazendo com que padding e border não de BO nas dimensões finais do elemento*/
+    box-sizing: border-box;
+
+
+}
+/* Seletor Pseudo-chasse :first-child*/
+nav a:first-child{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+/* Seletor pseudo-classe :last-child*/
+nav a:last-child{
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+}
+
+/* regra pára o estado do link  acionado
+Pseudo-classe :haver (Passar o mause)
+Pseudo-classe :focus (Receber Foco)*/
+nav a:hover,nav a:focus{
+    background-color: aquamarine;
+    color: aliceblue;
+
+}
+
+figure img{
+    filter: grayscale();
+    transition: 2s; 
+    /*clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */  
+    transform: scale(0.8); 
+}
+figure img:hover{ 
+    filter: none;
+    /*clip-path: polygon(1% 0, 100% 0, 100% 100%, 0% 100%);*/
+    /*transform: scale(1) rotate(360deg) ;*/
+}
+
+/* Regras de Animação*/
+
+@keyframes caindo{
+    /*como começa */
+    from {transform: translateY(-100px);
+    opacity: 0;}
+
+   /* como termina*/
+    to {transform: translateY(0);}
+}
+
+
+
+
+
+
+
