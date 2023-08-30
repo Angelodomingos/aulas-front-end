@@ -84,3 +84,18 @@ p a{
 color: brown;
 
 }
+
+ul{
+    margin: 10px;
+}
+
+li{
+    list-style-image: url(../imagens/fundo02.gif);
+    line-height: 32px;
+}
+
+/* Seletor PSEUDO-ELEMENTO(usa 2x o dois pontos::)*/
+
+li::marker{
+    content: "🔥";
+}
