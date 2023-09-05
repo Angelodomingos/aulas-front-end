@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="shortcut icon" href="dicas.png" type="image/x-icon">
+
+    <style>
+/* Alçteramdo o box Model para TODOS os elementos da página (por isso usamois o seletor asteteristico(*)*/
+        *{box-sizing: border-box;}
+        body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+        img{max-width: 100%;} 
+
+        
+        article{
+            padding: 8px;
+            border: solid 1px;
+            width: 30%;
+        }
+
+        article:first-child{background: yellow;}
+        article:nth-child(2){background: pink;}
+        article:last-child{background: orangered;}
+
+
+        /* Flex Containert*/
+        .cards{
+            display: flex;
+            /* Atenção ao usar direções
+            firentes do Flex pois os
+            eixos9horizontal/vertical)
+            vão mudar o comportamento
+            das propriedades abaixo. O valor
+            padrão é row (linha/horizontal).*/
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+    
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            /*gap: 12px;*/
+            background-color: aquamarine;
+            
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Fexbox</h1>
+    <hr>
+    <p>Flexbox: é um mecanismo CSS que permite aplicar facilmente recurso de alinhamento, espaçamento e distrbuição de elemneto no HTML. Muito útil na elaboração de layouts</p>
+
+<div class="cards">
+    <article>
+        <img src="imagens/mini-apple.jpg" alt="">
+        <h2>Apple</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, doloremque.</p>
+    </article>
+
+    <article>
+    <img src="imagens/mini-ibm.jpg" alt="">
+    <h2>IBM</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, minima.</p>
+    </article>
+    <article>
+        <img src="imagens/mini-microsoft.jpg" alt="">
+        <h2>Microsoft</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, aliquam.</p>
+    </article>
+</div>
+
+</body>
+</html>
